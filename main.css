@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/************************************************
+Common
+*************************************************/
+body {
+  background-color: #efefef;
+  font-family: "Heebo", sans-serif;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+/************************************************
+Navbar
+*************************************************/
+nav.navbar {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+}
+
+nav .navbar-brand img {
+  max-width: 2rem;
+}
+
+nav.navbar button.navbar-toggler {
+  align-self: end;
+}
+
+nav .container.nav-content {
+  margin: 0 auto 0 1rem;
+  max-width: 50vw;
+}
+
+/************************************************
+Hero
+*************************************************/
+section.hero-section {
+  padding-top: 4.5rem;
+}
+
+.hero-section .carousel-inner {
+  max-width: 95vw;
+  max-height: 44vw;
+}
+
+/************************************************
+company history
+*************************************************/
+section.jumbotron {
+}
+
+/************************************************
+Responsiveness
+*************************************************/
+@media screen and (min-width: 992px) {
+  /* navbar */
+  nav .container.nav-content {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  nav .navbar-brand img {
+    max-width: 5rem;
+  }
+
+  #navbarNavDropdown.collapse {
+    border-bottom: 1px black solid;
+    max-width: 45vw;
+  }
+
+  /* hero */
+  section.hero-section {
+    padding-top: 7rem;
+  }
+
+  .hero-section .carousel-inner {
+    max-width: 60rem;
+    max-height: 26rem;
+  }
+
+  /* company history */
+  section.jumbotron {
+    max-width: 60rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* common */
+  .wrapper {
+    margin: 0 auto;
+    max-width: 80rem;
+  }
+
+  /* hero */
+  .hero-section .carousel-inner {
+    max-width: 75rem;
+    max-height: 30rem;
+  }
+
+  /* company history */
+  section.jumbotron {
+    max-width: 70rem;
+  }
+}
