@@ -11,7 +11,6 @@ body {
 .wrapper {
   margin: 0;
   padding: 0;
-  width: 100vw;
 }
 
 /************************************************
@@ -54,6 +53,43 @@ company history
 section.jumbotron {
 }
 
+/************************************************
+Agent section
+*************************************************/
+section.container.agents .col.card {
+  margin: 0 0.5rem;
+}
+
+section.container.agents .card-body {
+  position: relative;
+}
+
+section.container.agents .card-body h1 {
+  position: absolute;
+  background: lightblue;
+  padding: 1rem;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  font-size: 2.2rem;
+}
+
+section.container.agents .card-body p {
+  padding-top: 2rem;
+}
+
+section.container.agents a {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+section.container.agents a:hover {
+  color: white;
+  background-color: #007bff;
+}
 /************************************************
 Responsiveness
 *************************************************/
