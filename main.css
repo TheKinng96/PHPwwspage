@@ -54,6 +54,27 @@ section.jumbotron {
 }
 
 /************************************************
+Company Slogan section
+*************************************************/
+section.company-slogan {
+  margin: 0 auto 2rem;
+}
+
+section.company-slogan .col.card {
+  margin: 0 0.5rem;
+}
+
+section.company-slogan h6.card-text {
+  font-size: 1.5rem;
+  font-weight: 350;
+}
+
+section.agents .row.cards-container,
+section.company-slogan .row.cards-container {
+  flex-direction: column;
+}
+
+/************************************************
 Agent section
 *************************************************/
 section.container.agents .col.card {
@@ -141,5 +162,13 @@ Responsiveness
   /* company history */
   section.jumbotron {
     max-width: 70rem;
+  }
+}
+
+@media screen and (min-width: 1225px) {
+  /* common */
+  section.agents .row.cards-container,
+  section.company-slogan .row.cards-container {
+    flex-direction: unset;
   }
 }
