@@ -171,7 +171,7 @@ Responsiveness
 
   .hero-section .carousel-inner {
     max-width: 100vw;
-    max-height: 26rem;
+    max-height: 50vw;
   }
 
   /* company history */
@@ -188,10 +188,6 @@ Responsiveness
   }
 
   /* hero */
-  .hero-section .carousel-inner {
-    max-width: 75rem;
-    max-height: 30rem;
-  }
 
   /* company history */
   section.jumbotron {
