@@ -4,7 +4,6 @@
 Common
 *************************************************/
 body {
-  background-color: #efefef;
   font-family: "Heebo", sans-serif;
 }
 
@@ -59,7 +58,39 @@ section.hero-section {
 /************************************************
 company history
 *************************************************/
-section.jumbotron {
+section.company-description {
+  display: flex;
+  max-width: 80vw;
+}
+
+section.company-description .company-description-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 300px 100px;
+  grid-gap: 0.5rem;
+}
+
+.company-description-images .gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.company-description-images .gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.company-description-images .gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+section.company-description .jumbotron {
+  background-color: unset;
 }
 
 /************************************************
