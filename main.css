@@ -61,7 +61,7 @@ section.company-slogan {
 }
 
 section.company-slogan .col.card {
-  margin: 0 0.5rem;
+  margin: 0 auto 1.5rem;
 }
 
 section.company-slogan h6.card-text {
@@ -77,15 +77,15 @@ section.company-slogan .row.cards-container {
 /************************************************
 Agent section
 *************************************************/
-section.container.agents .col.card {
+section.agents .col.card {
   margin: 0 0.5rem;
 }
 
-section.container.agents .card-body {
+section.agents .card-body {
   position: relative;
 }
 
-section.container.agents .card-body h1 {
+section.agents .card-body h1 {
   position: absolute;
   background: lightblue;
   padding: 1rem;
@@ -96,18 +96,33 @@ section.container.agents .card-body h1 {
   font-size: 2.2rem;
 }
 
-section.container.agents .card-body p {
+section.agents .img-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: 40vw;
+}
+
+section.agents img.card-img-top {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+section.agents .card-body p {
   padding-top: 2rem;
 }
 
-section.container.agents a {
+section.agents a {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-section.container.agents a:hover {
+section.agents a:hover {
   color: white;
   background-color: #007bff;
 }
@@ -170,5 +185,9 @@ Responsiveness
   section.agents .row.cards-container,
   section.company-slogan .row.cards-container {
     flex-direction: unset;
+  }
+
+  section.company-slogan .col.card {
+    margin: 0 auto 0.5rem;
   }
 }
