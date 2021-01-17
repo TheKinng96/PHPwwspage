@@ -97,6 +97,8 @@ company history
 section.company-description {
   display: flex;
   max-width: 80vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 section.company-description .company-description-images {
@@ -304,6 +306,11 @@ Responsiveness
   /* hero */
 
   /* company history */
+  section.company-description {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
   section.company-description .jumbotron {
     max-width: 70rem;
     padding: 3vw 5vw;
