@@ -1,0 +1,30 @@
+/************************************************
+Hero
+*************************************************/
+section.hero-section {
+  padding-top: 4.5rem;
+}
+
+.hero-section .carousel-inner {
+  max-width: 95vw;
+  max-height: 44vw;
+}
+.hero-section .carousel-inner .hero-layer{
+  background-color: rgba(214, 214, 214, 0.45);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  section.hero-section {
+    padding: 0rem;
+  }
+
+  .hero-section .carousel-inner {
+    max-width: 100vw;
+    max-height: 50vw;
+  }
+}

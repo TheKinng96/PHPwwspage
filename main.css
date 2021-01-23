@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@import url('./summary.css');
+@import url('./hero.css');
+@import url('./history.css');
+
 /************************************************
 Helpers
 *************************************************/
@@ -73,134 +77,9 @@ nav .container.nav-content {
   max-width: 50vw;
 }
 
-/************************************************
-Hero
-*************************************************/
-section.hero-section {
-  padding-top: 4.5rem;
-}
 
-.hero-section .carousel-inner {
-  max-width: 95vw;
-  max-height: 44vw;
-}
-.hero-section .carousel-inner .hero-layer{
-  background-color: rgba(214, 214, 214, 0.45);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-/************************************************
-company history
-*************************************************/
-section.company-description {
-  display: flex;
-  max-width: 80vw;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
 
-section.company-description .company-description-images {
-  display: none;
-}
-
-.company-description-images .gallery-item {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.company-description-images .gallery-item:nth-child(1){
-  grid-column: 1;
-  grid-row: 1 / 3;
-}
-.company-description-images .gallery-item:nth-child(2){
-  grid-column: 2;
-  grid-row: 1 / 2;
-}
-.company-description-images .gallery-item:nth-child(3){
-  grid-column: 2;
-  grid-row: 2 / 3;
-}
-.company-description-images .gallery-item:nth-child(4){
-  grid-column: 1 / 3;
-  grid-row: 3;
-}
-
-.company-description-images .gallery-item .image {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.company-description-images .gallery-item .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-
-section.company-description .jumbotron {
-  background-color: unset;
-  padding: 2vw;
-}
-
-section.company-description .jumbotron h2 {
-  font-size: 1.8rem;
-}
-
-/************************************************
-Company Slogan section
-*************************************************/
-section.company-summary { 
-  position: relative;
-  padding: 5rem;
-}
-
-section.company-summary .background {
-  position: absolute;
-  width: 100vw;
-  background: rgba(0, 20, 52, 0.03);
-  height: 100%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-section.company-summary  .list{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 5rem;
-  margin: 0;
-}
-
-section.company-summary  .list .list-item {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-section.company-summary .icon-container {
-  background: var(--blue-text);
-  color: var(--yellow-text);
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section.company-summary .list-item-number {
-  font-family: 'Amaranth', sans-serif;
-}
 
 /************************************************
 Agent section
@@ -258,17 +137,12 @@ section.agents a:hover {
 Responsiveness
 *************************************************/
 @media screen and (min-width: 455px) {
-  section.company-description .jumbotron h2 {
-    font-size: 2.25rem;
-  }
 }
 
 @media screen and (min-width: 576px) {
-
 }
 
 @media screen and (min-width: 768px) {
-
 }
 
 @media screen and (min-width: 992px) {
@@ -305,21 +179,6 @@ Responsiveness
     border-bottom: 1px black solid;
     max-width: 45vw;
   }
-
-  /* hero */
-  section.hero-section {
-    padding: 0rem;
-  }
-
-  .hero-section .carousel-inner {
-    max-width: 100vw;
-    max-height: 50vw;
-  }
-
-  /* company history */
-  section.company-description .jumbotron h2 {
-    font-size: 2.6rem;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -333,33 +192,6 @@ Responsiveness
     margin: 0 auto;
     max-width: 80rem;
   }
-
-  /* hero */
-
-  /* company history */
-  section.company-description {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
-  }
-
-  section.company-description .jumbotron {
-    max-width: 70rem;
-    padding: 3vw 5vw;
-    padding-right: 0;
-  }
-
-  section.company-description .jumbotron h2 {
-    font-size: 2.25rem;
-  }
-
-  section.company-description .company-description-images {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 1.5fr 1fr 1.25fr;
-    grid-gap: 0.5rem;
-    max-height: 34rem;
-    max-width: 40%;
-  }
 }
 
 @media screen and (min-width: 1225px) {
@@ -368,20 +200,7 @@ Responsiveness
   section.company-slogan .row.cards-container {
     flex-direction: unset;
   }
-
-  section.company-slogan .col.card {
-    margin: 0 auto 0.5rem;
-  }
 }
 
 @media screen and (min-width: 1400px) {
-  /* company history */
-  section.company-description .jumbotron {
-    padding: 5rem 7rem;
-    padding-right: 0;
-  }
-
-  section.company-description .company-description-images {
-    max-width: 28rem;
-  }
 }
