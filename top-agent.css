@@ -1,0 +1,67 @@
+/************************************************
+top agent
+*************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&display=swap');
+
+section.top-agent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw 2rem;
+}
+
+section.top-agent .profile-pic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.top-agent .profile-pic-container h2 {
+  font-size: 8.5vw;
+}
+
+section.top-agent .profile-pic-container .img-container {
+  max-width: 90vw;
+}
+
+section.top-agent .profile-pic-container img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.25));
+}
+
+section.top-agent .profile-text-container {
+  margin: 5vw 0;
+  font-family: 'Abril Fatface', cursive;
+}
+
+section.top-agent .profile-text-container .profile-top {
+  padding-left: 1rem;
+  position: relative;
+}
+
+section.top-agent .profile-text-container .profile-top::after {
+  content: '“';
+  top: 6rem;
+  font-size: 18rem;
+  font-family: 'Fraunces', serif;
+  line-height: 1rem;
+  color: rgba(0, 0, 0, 0.08);
+  position: absolute;
+}
+
+section.top-agent .profile-text-container h4 {
+  color: rgba(0, 29, 75, 0.56);
+}
+
+section.top-agent .profile-text-container .profile-bottom {
+  border-left: 1px solid black;
+  max-width: 75vw;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+}
