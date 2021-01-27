@@ -60,6 +60,22 @@ section.top-agent .profile-text-container .profile-bottom {
   max-width: 75vw;
   margin: 0 auto;
   padding: 1rem;
+  font-size: 1.3rem;
+}
+
+section.top-agent .profile-text-container p.cases {
+  text-transform: uppercase;
+  color: #00296B;
+  font-size: 1.5rem;
+  width: fit-content;
+  margin: 0;
+}
+
+section.top-agent .profile-text-container p.cases span {
+  display: block;
+  text-align: end;
+  color: #EBC400;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
