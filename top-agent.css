@@ -60,12 +60,13 @@ section.top-agent .profile-text-container .profile-bottom {
   max-width: 75vw;
   margin: 0 auto;
   padding: 1rem;
+  padding-bottom: 0;
   font-size: 1.3rem;
 }
 
 section.top-agent .profile-text-container p.cases {
   text-transform: uppercase;
-  color: #00296B;
+  color: var(--blue-text);
   font-size: 1.5rem;
   width: fit-content;
   margin: 0;
@@ -74,10 +75,39 @@ section.top-agent .profile-text-container p.cases {
 section.top-agent .profile-text-container p.cases span {
   display: block;
   text-align: end;
-  color: #EBC400;
+  color: var(--gold-text);
   font-size: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
+  section.top-agent .profile-text-container p.cases {
+    font-size: 1.3rem;
+  }
+}
 
+
+@media screen and (min-width: 768px) {
+  section.top-agent {
+    flex-direction: row;
+    padding: 1rem 2rem;
+  }
+
+  section.top-agent .profile-pic-container .img-container {
+    max-width: 52vw;
+  }
+
+  section.top-agent .profile-pic-container h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--blue-text);
+    margin-bottom: 2vw;
+  }
+
+  section.top-agent .profile-text-container {
+    width: 20rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
 }
