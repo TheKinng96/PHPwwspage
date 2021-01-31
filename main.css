@@ -7,6 +7,7 @@
 @import url('./hero.css');
 @import url('./history.css');
 @import url('./top-agent.css');
+@import url('./board.css');
 
 /************************************************
 Helpers
@@ -53,7 +54,7 @@ body {
 
 .wrapper {
   margin: 0;
-  padding: 0;
+  padding: 0 5vw;
 }
 
 /************************************************
@@ -79,66 +80,14 @@ nav .container.nav-content {
   max-width: 50vw;
 }
 
-
-
-
-
-/************************************************
-Agent section
-*************************************************/
-section.agents .col.card {
-  margin: 0 0.5rem;
-}
-
-section.agents .card-body {
-  position: relative;
-}
-
-section.agents .card-body h1 {
-  position: absolute;
-  background: lightblue;
-  padding: 1rem;
-  top: -2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  font-size: 2.2rem;
-}
-
-section.agents .img-wrapper {
-  margin: 0 auto;
-  width: 100%;
-  height: 40vw;
-}
-
-section.agents img.card-img-top {
-  border-top-left-radius: calc(.25rem - 1px);
-  border-top-right-radius: calc(.25rem - 1px);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-section.agents .card-body p {
-  padding-top: 2rem;
-}
-
-section.agents a {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-section.agents a:hover {
-  color: white;
-  background-color: #007bff;
-}
 /************************************************
 Responsiveness
 *************************************************/
 @media screen and (min-width: 455px) {
+  .wrapper {
+    margin: 0;
+    padding: 0 2rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -155,6 +104,10 @@ Responsiveness
 
   .is-sm-desktop-only-hidden {
     display: none;
+  }
+
+  .wrapper {
+    padding: 0 0;
   }
 
   /* navbar */

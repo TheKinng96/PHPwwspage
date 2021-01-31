@@ -8,7 +8,7 @@ section.top-agent {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5vw 2rem;
+  padding: 5vw 0;
 }
 
 section.top-agent .profile-pic-container {
@@ -105,9 +105,6 @@ section.top-agent .profile-text-container p.cases span {
 
   section.top-agent .profile-text-container {
     width: 20rem;
-    margin-left: 2rem;
+    margin: 3rem 0 0 2rem;
   }
-}
-
-@media screen and (min-width: 992px) {
 }

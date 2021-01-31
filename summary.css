@@ -3,7 +3,7 @@ Company Summary section
 *************************************************/
 section.company-summary { 
   position: relative;
-  padding: 15vw 5vw;
+  padding: 15vw 0;
 }
 
 section.company-summary .background {
@@ -78,13 +78,13 @@ section.company-summary .list-item-title {
 
 @media screen and (min-width: 455px) {
   section.company-summary {
-    padding: 5rem;
+    padding: 5rem 3rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   section.company-summary {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0;
   }
 
   section.company-summary .list {

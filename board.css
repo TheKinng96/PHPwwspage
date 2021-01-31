@@ -1,0 +1,75 @@
+/************************************************
+board
+*************************************************/
+section.performance-board { 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5vw 0;
+}
+
+section.performance-board .background {
+  position: absolute;
+  width: 100vw;
+  background: rgba(0, 20, 52, 0.03);
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.performance-board .board-left {
+  text-align: center;
+}
+
+section.performance-board .board-left h2 {
+  font-size: 7vw;
+  margin-bottom: 1rem;
+}
+
+section.performance-board .btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 8px 8px 20px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+}
+
+section.performance-board .btn:last-child {
+  margin-bottom: 0;
+}
+
+section.performance-board .btn .icon{
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  background:var(--blue-bg);
+  border-radius: 50%;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.performance-board .btn i {
+  margin-top: -0.5rem;
+}
+
+section.performance-board .btn .btn-text {
+  max-width: 78%;
+  text-align: initial;
+  margin-left: 1rem;
+}
+
+section.performance-board .btn h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 400;
+  color: var(--blue-text);
+}
+
+section.performance-board .btn p {
+  margin: 0;
+  line-height: 1rem;
+  color: var(--grey-text);
+}
