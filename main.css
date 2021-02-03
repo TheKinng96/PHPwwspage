@@ -44,6 +44,10 @@ Helpers
   display: none;
 }
 
+.is-mobile {
+  display: initial;
+}
+
 /************************************************
 Common
 *************************************************/
@@ -100,6 +104,10 @@ Responsiveness
   /* helper */
   .is-desktop {
     display: initial;
+  }
+
+  .is-mobile {
+    display: none;
   }
 
   .is-sm-desktop-only-hidden {

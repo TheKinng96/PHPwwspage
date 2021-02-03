@@ -193,6 +193,15 @@
       <div class="background"></div>
       <div class="board-left">
         <h2>Agents Performance Board</h2>
+        <select class="form-select is-mobile" onchange="updateBoard()" aria-label="Default select example" id="boardSelect">
+          <option selected value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="quarterly">Quarterly</option>
+          <option value="yearly">Yearly</option>
+        </select>
+        <div id="boardDescription" class="is-mobile">
+          <p class="btn-description">Weekly aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+        </div>
         <div class="btn-container">
           <button id="weekBoard" class="btn">
             <div class="icon">
@@ -233,7 +242,7 @@
         </div>
       </div>
       <div class="board-right">
-
+        <img src="./assets/weekly.jpg" alt="board contest">
       </div>
     </section>
   </main>

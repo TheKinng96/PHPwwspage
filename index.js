@@ -15,3 +15,38 @@ let currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
+// get select value
+let boardValue = document.getElementById('boardSelect').value;
+const boardDescription = document.getElementById('boardDescription');
+
+updateBoard = () => {
+  boardValue = document.getElementById('boardSelect').value;
+
+  switch (boardValue.toLowerCase()) {
+    case 'weekly':
+      updateText('weekly');
+      break;
+    case 'monthly':
+      updateText('monthly');
+      break;
+    case 'quarterly':
+      updateText('quarterly');
+      break;
+    case 'yearly':
+      updateText('yearly');
+      break;
+  }
+}
+
+function updateText(boardType) {
+  boardDescription.innerHTML = ''
+
+  let description = '';
+  
+  description += `
+    <p class="btn-description">${boardType} aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+  `;
+
+  boardDescription.innerHTML = description;
+}
