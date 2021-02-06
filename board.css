@@ -3,9 +3,12 @@ board
 *************************************************/
 section.performance-board { 
   position: relative;
+  padding: 5vw 0;
+}
+
+section.performance-board .board-content {
   display: flex;
   flex-direction: column;
-  padding: 5vw 0;
 }
 
 section.performance-board .background {
@@ -26,6 +29,7 @@ section.performance-board .board-left {
 section.performance-board .board-left h2 {
   font-size: 7vw;
   margin-bottom: 1rem;
+  color: #00296B;
 }
 
 section.performance-board .board-left select {
@@ -35,7 +39,7 @@ section.performance-board .board-left select {
   border-radius: 0.25rem;
   box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.25);
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 section.performance-board .btn-container {
@@ -43,7 +47,7 @@ section.performance-board .btn-container {
 }
 
 section.performance-board #boardDescription p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
   text-align: initial;
   background: white;
@@ -56,6 +60,7 @@ section.performance-board .btn {
   align-items: center;
   box-shadow: 8px 8px 20px 1px rgba(0, 0, 0, 0.25);
   margin-bottom: 1rem;
+  padding: 1rem 2rem;
 }
 
 section.performance-board .btn:last-child {
@@ -108,12 +113,62 @@ section.performance-board .board-right img {
   border-radius: 0px 6rem;
 }
 
+@media screen and (min-width: 576px) {
+  section.performance-board .board-left select {
+    font-size: 1.5rem;
+  }
+  section.performance-board #boardDescription p {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
+  section.performance-board {
+    padding: 3rem 2rem;
+  }
+
   section.performance-board .btn-container {
     display: initial;
   }
 
+  section.performance-board .board-content {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  section.performance-board .board-left {
+    max-width: 30rem;
+  }
+
+  section.performance-board .board-right {
+    margin: unset;
+    max-width: 26rem;
+  }
+
   section.performance-board .board-left h2 {
     font-size: 3rem;
+  }
+
+  section.performance-board .board-right {
+    position: relative;
+  }
+
+  section.performance-board .board-right::after {
+    content: '';
+    background: url('./assets/dots.png') no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 16%;
+    right: -78%;
+    transform: scale(1.5);
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.performance-board {
+    padding: 5rem 0;
   }
 }

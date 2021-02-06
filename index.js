@@ -19,27 +19,20 @@ let currentScrollPos = window.pageYOffset;
 // get select value
 let boardValue = document.getElementById('boardSelect').value;
 const boardDescription = document.getElementById('boardDescription');
+const boardImage = document.getElementById('boardImage');
 
-updateBoard = () => {
-  boardValue = document.getElementById('boardSelect').value;
+updateBoard = (boardType) => {
 
-  switch (boardValue.toLowerCase()) {
-    case 'weekly':
-      updateText('weekly');
-      break;
-    case 'monthly':
-      updateText('monthly');
-      break;
-    case 'quarterly':
-      updateText('quarterly');
-      break;
-    case 'yearly':
-      updateText('yearly');
-      break;
+  if (boardType) {
+    boardValue = boardType;
+  } else {
+    boardValue = document.getElementById('boardSelect').value;
   }
+  
+  updateContent(boardValue);
 }
 
-function updateText(boardType) {
+function updateContent(boardType) {
   boardDescription.innerHTML = ''
 
   let description = '';
@@ -49,4 +42,5 @@ function updateText(boardType) {
   `;
 
   boardDescription.innerHTML = description;
+  boardImage.src = `./assets/${boardType}.jpg`
 }

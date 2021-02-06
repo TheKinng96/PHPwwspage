@@ -191,58 +191,60 @@
     <!-- agent performance board -->
     <section class="performance-board">
       <div class="background"></div>
-      <div class="board-left">
-        <h2>Agents Performance Board</h2>
-        <select class="form-select is-mobile" onchange="updateBoard()" aria-label="Default select example" id="boardSelect">
-          <option selected value="weekly">Weekly</option>
-          <option value="monthly">Monthly</option>
-          <option value="quarterly">Quarterly</option>
-          <option value="yearly">Yearly</option>
-        </select>
-        <div id="boardDescription" class="is-mobile">
-          <p class="btn-description">Weekly aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+      <div class="board-content">
+        <div class="board-left">
+          <h2>Agents Performance Board</h2>
+          <select class="form-select is-mobile" onchange="updateBoard()" aria-label="Default select example" id="boardSelect">
+            <option selected value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+          <div id="boardDescription" class="is-mobile">
+            <p class="btn-description">Weekly aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+          </div>
+          <div class="btn-container">
+            <button onclick="updateBoard('weekly')" class="btn">
+              <div class="icon">
+                <i class="bi bi-calendar-week"></i>
+              </div>
+              <div class="btn-text">
+                <h3>Weekly</h3>
+                <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+              </div>
+            </button>
+            <button onclick="updateBoard('monthly')" class="btn">
+              <div class="icon">
+                <i class="bi bi-calendar3"></i>
+              </div>
+              <div class="btn-text">
+                <h3>Monthly</h3>
+                <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+              </div>
+            </button>
+            <button onclick="updateBoard('quarterly')" class="btn">
+              <div class="icon">
+                <i class="bi bi-calendar2"></i>
+              </div>
+              <div class="btn-text">
+                <h3>Quarterly</h3>
+                <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+              </div>
+            </button>
+            <button onclick="updateBoard('yearly')" class="btn">
+              <div class="icon">
+                <i class="bi bi-calendar2-fill"></i>
+              </div>
+              <div class="btn-text">
+                <h3>Yearly</h3>
+                <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+              </div>
+            </button>
+          </div>
         </div>
-        <div class="btn-container">
-          <button id="weekBoard" class="btn">
-            <div class="icon">
-              <i class="bi bi-calendar-week"></i>
-            </div>
-            <div class="btn-text">
-              <h3>Weekly</h3>
-              <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
-            </div>
-          </button>
-          <button id="monthBoard" class="btn">
-            <div class="icon">
-              <i class="bi bi-calendar3"></i>
-            </div>
-            <div class="btn-text">
-              <h3>Monthly</h3>
-              <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
-            </div>
-          </button>
-          <button id="quarterBoard" class="btn">
-            <div class="icon">
-              <i class="bi bi-calendar2"></i>
-            </div>
-            <div class="btn-text">
-              <h3>Quarterly</h3>
-              <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
-            </div>
-          </button>
-          <button id="yearBoard" class="btn">
-            <div class="icon">
-              <i class="bi bi-calendar2-fill"></i>
-            </div>
-            <div class="btn-text">
-              <h3>Yearly</h3>
-              <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
-            </div>
-          </button>
+        <div class="board-right">
+          <img src="./assets/weekly.jpg" alt="board contest" id="boardImage">
         </div>
-      </div>
-      <div class="board-right">
-        <img src="./assets/weekly.jpg" alt="board contest">
       </div>
     </section>
   </main>
