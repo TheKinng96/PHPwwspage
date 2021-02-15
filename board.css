@@ -1,7 +1,7 @@
 /************************************************
 board
 *************************************************/
-section.performance-board { 
+section.performance-board {
   position: relative;
   padding: 5vw 0;
 }
@@ -29,7 +29,7 @@ section.performance-board .board-left {
 section.performance-board .board-left h2 {
   font-size: 7vw;
   margin-bottom: 1rem;
-  color: #00296B;
+  color: #00296b;
 }
 
 section.performance-board .board-left select {
@@ -67,11 +67,11 @@ section.performance-board .btn:last-child {
   margin-bottom: 0;
 }
 
-section.performance-board .btn .icon{
+section.performance-board .btn .icon {
   width: 3rem;
   height: 3rem;
   color: white;
-  background:var(--blue-bg);
+  background: var(--blue-bg);
   border-radius: 50%;
   font-size: 1.75rem;
   display: flex;
@@ -112,6 +112,12 @@ section.performance-board .board-right img {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 0px 6rem;
 }
+@media screen and (min-width: 445px) {
+  section.performance-board .board-content .board-right img {
+    width: auto;
+    height: 80vh;
+  }
+}
 
 @media screen and (min-width: 576px) {
   section.performance-board .board-left select {
@@ -146,6 +152,11 @@ section.performance-board .board-right img {
     max-width: 26rem;
   }
 
+  section.performance-board .board-content .board-right img {
+    width: 100%;
+    height: auto;
+  }
+
   section.performance-board .board-left h2 {
     font-size: 3rem;
   }
@@ -155,8 +166,8 @@ section.performance-board .board-right img {
   }
 
   section.performance-board .board-right::after {
-    content: '';
-    background: url('./assets/dots.png') no-repeat;
+    content: "";
+    background: url("./assets/dots.png") no-repeat;
     height: 100%;
     width: 100%;
     position: absolute;
