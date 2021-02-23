@@ -1,0 +1,13 @@
+/************************************************
+Footer
+*************************************************/
+footer.footer {
+  background-color: #001c4a;
+  color: white;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+footer.footer . {
+}
