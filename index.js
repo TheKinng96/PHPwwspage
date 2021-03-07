@@ -44,3 +44,6 @@ function updateContent(boardType) {
   boardDescription.innerHTML = description;
   boardImage.src = `./assets/${boardType}.jpg`
 }
+
+// Animation
+AOS.init();

@@ -39,7 +39,11 @@ footer.footer ul {
 }
 
 footer.footer .footer-top div:first-child {
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
+}
+
+footer.footer .footer-top div:nth-child(2) {
+  text-align: end;
 }
 
 footer.footer li::before {
@@ -87,6 +91,10 @@ footer.footer .footer-bottom img {
   }
 
   footer.footer .footer-top div:first-child {
+    margin-bottom: unset;
+  }
+
+  footer.footer .footer-top div:nth-child(2) {
     margin-bottom: unset;
   }
 

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
-  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>WWS</title>
 </head>
 <body>
@@ -98,34 +98,54 @@
   <main class="wrapper">
   
     <!-- company history -->
-    <section class="company-description mx-auto">
+    <section class="company-description mx-auto" >
       <div class="company-description-images mx-auto my-auto">
-        <div class="gallery-item">
+        <div 
+          class="gallery-item" 
+          data-aos="fade-up" 
+          data-aos-duration="2000" 
+        >
           <div class="image">
             <img src="https://source.unsplash.com/1600x900/?love" alt="nature">
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div 
+          class="gallery-item" 
+          data-aos="fade-up" 
+          data-aos-duration="2500" 
+        >
           <div class="image">
             <img src="https://source.unsplash.com/1600x900/?people" alt="nature">
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div 
+          class="gallery-item" 
+          data-aos="fade-up" 
+          data-aos-duration="2500" 
+        >
           <div class="image">
             <img src="https://source.unsplash.com/1600x900/?family alt="nature">
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div 
+          class="gallery-item" 
+          data-aos="fade-up" 
+          data-aos-duration="2000" 
+        >
           <div class="image">
             <img src="https://source.unsplash.com/1600x900/?money" alt="nature">
           </div>
         </div>
         
       </div>
-      <div class="jumbotron my-auto">
+      <div 
+        class="jumbotron my-auto" 
+        data-aos="fade-down-left" 
+        data-aos-duration="2000"
+      >
         <h2 class="display-4 is-blue">New to Insurance? <br class="is-sm-desktop-only-hidden">We are here to <span class="is-gold">HELP</span>.</h2>
         <p class="lead is-grey">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         <br>
@@ -144,17 +164,33 @@
       <div class="background"></div>
       <div class="card">
         <ul class="list">
-          <li class="list-item">
+          <li 
+            class="list-item" 
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+            data-aos-anchor-placement="top-center"
+          >
             <span class="icon-container"><i class="fas fa-award"></i></span>
             <span class="list-item-number">90+</span>
             <span class="list-item-title">Award Winning</span>
           </li>
-          <li class="list-item">
+          <li 
+            class="list-item" 
+            data-aos="fade-up"
+            data-aos-duration="2500"
+            data-aos-anchor-placement="top-center"
+          >
             <span class="icon-container"><i class="fas fa-user-tie"></i></span>
             <span class="list-item-number">19</span>
             <span class="list-item-title">Insurance Agents</span>
           </li>
-          <li class="list-item">
+          <li 
+            class="list-item" 
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-anchor-placement="top-center"
+          >
             <span class="icon-container"><i class="fas fa-users"></i></span>
             <span class="list-item-number">99%</span>
             <span class="list-item-title">Happy Clients</span>
@@ -165,13 +201,22 @@
 
     <!-- monthly top agent -->
     <section class="top-agent">
-      <div class="profile-pic-container">
+      <div 
+        class="profile-pic-container" 
+        data-aos="zoom-out"
+        data-aos-duration="3000"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <h2>Monthly Top Agent</h2>
         <div class="img-container">
           <img src="./assets/agent-pic.png" alt="top-agent">
         </div>
       </div>
-      <div class="profile-text-container">
+      <div 
+        class="profile-text-container"
+        data-aos="fade-down-left"
+        data-aos-duration="2500"
+        data-aos-anchor-placement="bottom-bottom">
         <div class="profile-top">
           <h4>New Member</h4>
           <h3>Henry Blahblahblah</h3>
@@ -292,7 +337,7 @@
   <!-- footer -->
   <footer class="footer">
     <div class="row footer-top">
-      <div class="company-contact col-md-5">
+      <div class="company-contact col-md-5 col-7">
         <h1>WWS<span class="is-gold">.</span></h1>
         <h2>Address here Taman Utama ... </h2>
         <p>Contact</p>
@@ -331,6 +376,7 @@
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
