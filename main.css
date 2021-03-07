@@ -27,7 +27,7 @@ Helpers
 }
 
 .is-gold {
-  color: var(--gold-text);
+  color: var(--gold-text) !important;
 }
 
 .is-grey {
