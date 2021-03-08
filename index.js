@@ -45,5 +45,5 @@ function updateContent(boardType) {
   boardImage.src = `./assets/${boardType}.jpg`
 }
 
-// Animation
-AOS.init();
+// Animation, let it run after a sec
+  setTimeout(function () { AOS.init() }, 1000);
