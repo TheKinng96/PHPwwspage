@@ -144,7 +144,7 @@
       <div 
         class="jumbotron my-auto" 
         data-aos="fade-down-left" 
-        data-aos-duration="2000"
+        data-aos-duration="1500"
       >
         <h2 class="display-4 is-blue">New to Insurance? <br class="is-sm-desktop-only-hidden">We are here to <span class="is-gold">HELP</span>.</h2>
         <p class="lead is-grey">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -168,7 +168,7 @@
             class="list-item" 
             data-aos="fade-up"
             data-aos-easing="linear"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             data-aos-anchor-placement="top-center"
           >
             <span class="icon-container"><i class="fas fa-award"></i></span>
@@ -178,7 +178,7 @@
           <li 
             class="list-item" 
             data-aos="fade-up"
-            data-aos-duration="2500"
+            data-aos-duration="2000"
             data-aos-anchor-placement="top-center"
           >
             <span class="icon-container"><i class="fas fa-user-tie"></i></span>
@@ -188,7 +188,7 @@
           <li 
             class="list-item" 
             data-aos="fade-up"
-            data-aos-duration="3000"
+            data-aos-duration="2500"
             data-aos-anchor-placement="top-center"
           >
             <span class="icon-container"><i class="fas fa-users"></i></span>
@@ -204,7 +204,7 @@
       <div 
         class="profile-pic-container" 
         data-aos="zoom-out"
-        data-aos-duration="3000"
+        data-aos-duration="2000"
         data-aos-anchor-placement="bottom-bottom"
       >
         <h2>Monthly Top Agent</h2>
@@ -215,8 +215,9 @@
       <div 
         class="profile-text-container"
         data-aos="fade-down-left"
-        data-aos-duration="2500"
-        data-aos-anchor-placement="bottom-bottom">
+        data-aos-duration="1500"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <div class="profile-top">
           <h4>New Member</h4>
           <h3>Henry Blahblahblah</h3>
@@ -239,7 +240,13 @@
       <div class="background"></div>
       <div class="board-content">
         <div class="board-left">
-          <h2>Agents Performance Board</h2>
+          <h2 
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="bottom-bottom"
+            >
+            Agents Performance Board
+          </h2>
           <select class="form-select is-mobile" onchange="updateBoard()" aria-label="Default select example" id="boardSelect">
             <option selected value="weekly">Weekly</option>
             <option value="monthly">Monthly</option>
@@ -250,7 +257,13 @@
             <p class="btn-description">Weekly aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
           </div>
           <div class="btn-container">
-            <button onclick="updateBoard('weekly')" class="btn">
+            <button 
+              onclick="updateBoard('weekly')" 
+              class="btn" 
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div class="icon">
                 <i class="bi bi-calendar-week"></i>
               </div>
@@ -259,7 +272,13 @@
                 <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
               </div>
             </button>
-            <button onclick="updateBoard('monthly')" class="btn">
+            <button 
+              onclick="updateBoard('monthly')" 
+              class="btn"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div class="icon">
                 <i class="bi bi-calendar3"></i>
               </div>
@@ -268,7 +287,13 @@
                 <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
               </div>
             </button>
-            <button onclick="updateBoard('quarterly')" class="btn">
+            <button 
+              onclick="updateBoard('quarterly')" 
+              class="btn"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div class="icon">
                 <i class="bi bi-calendar2"></i>
               </div>
@@ -277,7 +302,13 @@
                 <p class="btn-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
               </div>
             </button>
-            <button onclick="updateBoard('yearly')" class="btn">
+            <button 
+              onclick="updateBoard('yearly')" 
+              class="btn"
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div class="icon">
                 <i class="bi bi-calendar2-fill"></i>
               </div>
@@ -288,7 +319,12 @@
             </button>
           </div>
         </div>
-        <div class="board-right">
+        <div 
+          class="board-right" 
+          data-aos="flip-left" 
+          data-aos-duration="1500"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <img src="./assets/weekly.jpg" alt="board contest" id="boardImage">
         </div>
       </div>
