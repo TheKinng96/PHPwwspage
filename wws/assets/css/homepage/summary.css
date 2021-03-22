@@ -1,0 +1,120 @@
+/************************************************
+Company Summary section
+*************************************************/
+section.company-summary { 
+  position: relative;
+  padding: 15vw 0;
+}
+
+section.company-summary .background {
+  position: absolute;
+  width: 100vw;
+  background: rgba(0, 20, 52, 0.03);
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.company-summary .card {
+  width: min-content;
+  margin: auto;
+  padding: 0 2rem;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+section.company-summary .list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5vw 0;
+  margin: 0;
+  width: 14rem;
+}
+
+section.company-summary .list .list-item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-text);
+  padding: 0.5rem 0;
+  margin: 0.25rem 0;
+}
+
+section.company-summary .list .list-item:last-child {
+  border: none;
+}
+
+section.company-summary .icon-container {
+  background: var(--blue-text);
+  color: var(--yellow-text);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+section.company-summary .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vw;
+}
+
+section.company-summary .list-item-number {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 2rem;
+}
+
+section.company-summary .list-item-title {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 455px) {
+  section.company-summary {
+    padding: 5rem 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.company-summary {
+    padding: 1.5rem 0;
+  }
+
+  section.company-summary .list {
+    padding: 5vw 0;
+    flex-direction: row;
+    width: unset;
+  }
+
+  section.company-summary .list .list-item {
+    border-right: 1px solid var(--grey-text);
+    border-bottom: none;
+    width: unset;
+  }
+
+  section.company-summary .card {
+    padding: 0;
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section.company-summary {
+    padding: 5rem;
+  }
+
+  section.company-summary .card {
+    max-width: 52rem;
+  }
+
+  section.company-summary .list {
+    padding: 5rem 0;
+  }
+}

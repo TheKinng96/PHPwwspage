@@ -1,0 +1,115 @@
+/************************************************
+company history
+*************************************************/
+section.company-description {
+  display: flex;
+  max-width: 80vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+section.company-description .company-description-images {
+  display: none;
+}
+
+.company-description-images .gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.company-description-images .gallery-item:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+.company-description-images .gallery-item:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1 / 2;
+}
+.company-description-images .gallery-item:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2 / 3;
+}
+.company-description-images .gallery-item:nth-child(4) {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+.company-description-images .gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.company-description-images .gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+section.company-description .jumbotron {
+  background-color: unset;
+  padding: 2vw;
+}
+
+section.company-description .lead {
+  font-size: 1rem;
+}
+
+section.company-description a.btn-lg {
+  font-size: 0.8rem;
+}
+
+section.company-description .jumbotron h2 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 455px) {
+  section.company-description .jumbotron h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section.company-description .jumbotron h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.company-description {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  section.company-description .jumbotron {
+    max-width: 70rem;
+    padding: 3vw 5vw;
+    padding-right: 0;
+  }
+
+  section.company-description .jumbotron h2 {
+    font-size: 2.25rem;
+  }
+
+  section.company-description .company-description-images {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1.25fr;
+    grid-gap: 0.5rem;
+    max-height: 34rem;
+    max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  section.company-description .jumbotron {
+    padding: 5rem 7rem;
+    padding-right: 0;
+  }
+
+  section.company-description .company-description-images {
+    max-width: 28rem;
+  }
+}
