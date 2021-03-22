@@ -1,8 +1,6 @@
 /************************************************
 top agent
 *************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&display=swap');
-
 section.top-agent {
   display: flex;
   flex-direction: column;

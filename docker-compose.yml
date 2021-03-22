@@ -38,6 +38,7 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DEBUG: 1
     volumes:
       - ./wws:/var/www/html/wp-content/themes/wws
     container_name: wordpress_wws
