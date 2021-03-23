@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css": "node-sass --output-style compressed --include-path scss assets/css/source.scss assets/css/styles.css",
-    "watch": "nodemon -e scss -x \"npm run css\""
+    "watch": "nodemon -e scss -x \"npx mix\""
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "laravel-mix": "^6.0.13",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
+  },
   "dependencies": {
-    "node-sass": "^5.0.0",
     "nodemon": "^2.0.7"
   }
 }

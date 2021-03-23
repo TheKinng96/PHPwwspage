@@ -7,12 +7,13 @@
   <title>WWS</title>
 </head>
 <body>
+  <?php $uri = get_theme_file_uri(); ?>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
     <div class="container nav-content">
         <a class="navbar-brand" href="#">
-          <img src="./img/logo.png" class="d-none d-lg-block" alt="WWS-logo">
-          <img src="./img/logo-mobile.png" class="d-lg-none" alt="WWS-logo">
+          <img src="<?php echo $uri; ?>/assets/img/logo.png" class="d-none d-lg-block" alt="WWS-logo">
+          <img src="<?php echo $uri; ?>/assets/img/logo-mobile.png" class="d-lg-none" alt="WWS-logo">
         </a>
         
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -63,17 +64,17 @@
         </ol>
         <div class="carousel-inner mx-auto">
           <div class="carousel-item active" data-interval="10000000">
-            <img src="./img/hero_1.jpg" class="d-block w-100" alt="...">
+            <img src="<?php echo $uri; ?>/assets/img/hero_1.jpg" class="d-block w-100" alt="...">
               <div class="hero-layer"></div>
             </img>
           </div>
           <div class="carousel-item" data-interval="10000000">
-            <img src="./img/hero_3.jpg" class="d-block w-100" alt="...">
+            <img src="<?php echo $uri; ?>/assets/img/hero_3.jpg" class="d-block w-100" alt="...">
             <div class="hero-layer"></div>
             </img>
           </div>
           <div class="carousel-item" data-interval="10000000">
-            <img src="./img/hero_4.jpg" class="d-block w-100" alt="...">
+            <img src="<?php echo $uri; ?>/assets/img/hero_4.jpg" class="d-block w-100" alt="...">
             <div class="hero-layer"></div>
             </img>
           </div>
@@ -203,7 +204,7 @@
       >
         <h2>Monthly Top Agent</h2>
         <div class="img-container">
-          <img src="./img/agent-pic.png" alt="top-agent">
+          <img src="<?php echo $uri; ?>/assets/img/agent-pic.png" alt="top-agent">
         </div>
       </div>
       <div 
@@ -319,7 +320,7 @@
           data-aos-duration="1500"
           data-aos-anchor-placement="bottom-bottom"
         >
-          <img src="./img/weekly.jpg" alt="board contest" id="boardImage">
+          <img src="<?php echo $uri; ?>/assets/img/weekly.jpg" alt="board contest" id="boardImage">
         </div>
       </div>
     </section>
@@ -357,7 +358,7 @@
           </div>
         </div>
         <div class="post-image-container is-desktop">
-          <img src="./img/posts-a.png" alt="post-area-cover">
+          <img src="<?php echo $uri; ?>/assets/img/posts-a.png" alt="post-area-cover">
         </div>
       </div>
     </section>
@@ -394,7 +395,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <img src="./img/logo-mobile.png" alt="wws logo">
+      <img src="<?php echo $uri; ?>/assets/img/logo-mobile.png" alt="wws logo">
       <p>
         Copyright &copy; WWS team. All Rights Reserved. 
       </p>
@@ -402,11 +403,6 @@
   </footer>
 
   <!-- javascript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./index.js"></script>
+  <?php wp_footer(); ?>
 </body>
 </html>
