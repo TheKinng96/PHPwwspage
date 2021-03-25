@@ -1,0 +1,61 @@
+/* blog social options */
+.blog-social-container :is(a, button) {
+  text-decoration: none !important;
+  width: 60px;
+  height: 40px;
+  color: white;
+}
+
+.blog-social-container iframe {
+  width: unset !important;
+  height: unset !important;
+  max-width: 60px;
+  max-height: 40px;
+}
+
+.blog-social-container :is(a:hover, button:hover) {
+  color: white !important;
+}
+
+.blog-social-container iframe {
+  display: initial;
+}
+
+.blog-social-container a.twitter {
+  background: #1da1f2;
+}
+
+.blog-social-container a.facebook {
+  background: #3b5998;
+}
+
+.blog-social-container button.rss {
+  background: #fb950a;
+}
+
+.blog-social-container button.copy-link {
+  background: #9bdf5b;
+}
+
+a.blog-middle-banner img {
+  margin: 0 auto;
+}
+
+.blog-social-container .column.has-text-right {
+  width: 90%;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 326px) {
+  .blog-social-container .column.has-text-right {
+    width: 73%;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .blog-social-container .column.has-text-right {
+    width: 90%;
+    margin-left: auto;
+  }
+}
