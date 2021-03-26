@@ -4,18 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "cross-env NODE_ENV=production nodemon -e scss -x \"npx mix\""
+    "css": "node-sass --include-path scss assets/css/source.scss assets/css/source.css",
+    "uglify-css": "uglifycss assets/css/source.css > assets/css/source.min.css",
+    "watch": "nodemon -e scss -x \"npm run css\" && \"npm run uglify-css\""
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "laravel-mix": "^6.0.13",
-    "resolve-url-loader": "^3.1.2",
-    "sass": "^1.32.8",
-    "sass-loader": "^10.1.1"
-  },
   "dependencies": {
-    "cross-env": "^7.0.3",
-    "nodemon": "^2.0.7"
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "uglifycss": "^0.0.29"
   }
 }

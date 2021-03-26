@@ -13,7 +13,7 @@ function wws_enqueue() {
   wp_register_style('bootstrap_icon', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css', [], $ver);
   wp_register_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css', [], $ver);
   wp_register_style('aos_style', 'https://unpkg.com/aos@2.3.1/dist/aos.css', [], $ver);
-  wp_register_style('styles', $uri . '/dist/source.css', [], $ver);
+  wp_register_style('styles', $uri . '/assets/css/source.min.css', [], $ver);
 
   wp_enqueue_style('heebo_google_font');
   wp_enqueue_style('alegreya_google_font');
@@ -28,7 +28,7 @@ function wws_enqueue() {
 
   wp_register_script('bootstrap_js', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js', [], $ver, true);
   wp_register_script('aos_js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', [], $ver, true);
-  wp_register_script('wws_js', $uri . '/dist/index.js', [], $ver, true);
+  wp_register_script('wws_js', $uri . '/assets/js/index.js', [], $ver, true);
 
   wp_enqueue_script('bootstrap_js');
   wp_enqueue_script('aos_js');
