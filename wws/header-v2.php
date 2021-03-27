@@ -9,9 +9,9 @@
 <body <?php body_class(); ?>>
   <?php $uri = get_theme_file_uri(); ?>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light posts" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light posts">
     <div class="container nav-content">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand posts" href="#">
           <img src="<?php echo $uri; ?>/assets/img/logo.png" class="d-none d-lg-block" alt="WWS-logo">
           <img src="<?php echo $uri; ?>/assets/img/logo-mobile.png" class="d-lg-none" alt="WWS-logo">
         </a>
