@@ -21,18 +21,18 @@ let boardValue = document.getElementById('boardSelect').value;
 const boardDescription = document.getElementById('boardDescription');
 const boardImage = document.getElementById('boardImage');
 
-updateBoard = (boardType) => {
-
-  if (boardType) {
+updateBoard = (boardType, parentURL) => {
+  let updateURL = parentURL;
+  if (boardType && boardType !== '') {
     boardValue = boardType;
   } else {
     boardValue = document.getElementById('boardSelect').value;
   }
   
-  updateContent(boardValue);
+  updateContent(boardValue, updateURL);
 }
 
-function updateContent(boardType) {
+function updateContent(boardType, updateURL) {
   boardDescription.innerHTML = ''
 
   let description = '';
@@ -42,7 +42,7 @@ function updateContent(boardType) {
   `;
 
   boardDescription.innerHTML = description;
-  boardImage.src = `./assets/${boardType}.jpg`
+  boardImage.src = `${updateURL}/assets/img/${boardType}.jpg`
 }
 
 // Animation, let it run after a sec

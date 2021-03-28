@@ -193,7 +193,7 @@
             >
             Agents Performance Board
           </h2>
-          <select class="form-select is-mobile" onchange="updateBoard()" aria-label="Default select example" id="boardSelect">
+          <select class="form-select is-mobile" onchange="updateBoard('','<?php echo $uri; ?>')" aria-label="Default select example" id="boardSelect">
             <option selected value="weekly">Weekly</option>
             <option value="monthly">Monthly</option>
             <option value="quarterly">Quarterly</option>
@@ -204,7 +204,7 @@
           </div>
           <div class="btn-container">
             <button 
-              onclick="updateBoard('weekly')" 
+              onclick="updateBoard('weekly', '<?php echo $uri; ?>')" 
               class="btn" 
               data-aos="fade-right"
               data-aos-duration="1000"
@@ -219,7 +219,7 @@
               </div>
             </button>
             <button 
-              onclick="updateBoard('monthly')" 
+              onclick="updateBoard('monthly', '<?php echo $uri; ?>')" 
               class="btn"
               data-aos="fade-right"
               data-aos-duration="1500"
@@ -234,7 +234,7 @@
               </div>
             </button>
             <button 
-              onclick="updateBoard('quarterly')" 
+              onclick="updateBoard('quarterly', '<?php echo $uri; ?>')" 
               class="btn"
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -249,7 +249,7 @@
               </div>
             </button>
             <button 
-              onclick="updateBoard('yearly')" 
+              onclick="updateBoard('yearly', '<?php echo $uri; ?>')" 
               class="btn"
               data-aos="fade-right"
               data-aos-duration="2500"

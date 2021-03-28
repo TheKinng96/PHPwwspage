@@ -566,7 +566,7 @@ section.performance-board .board-right img {
     position: relative; }
   section.performance-board .board-right::after {
     content: "";
-    background: url("../../img/dots.png") no-repeat;
+    background: url("../img/dots.png") no-repeat;
     height: 100%;
     width: 100%;
     position: absolute;

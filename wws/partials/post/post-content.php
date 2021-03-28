@@ -18,24 +18,31 @@
 
         <!-- post header -->
         <div class="blog-header">
-            <div class="blog-title-container m-2">
-              <h1 class="is-size-3-desktop is-size-4-tablet is-size-5-mobile" itemprop="headline"><?php the_title(); ?>
-                <meta itemprop="name" content="<?php the_title(); ?>">
-              </h1>
-              <p class="has-text-grey-light">
+          <div class="blog-title-container">
+            <h1 itemprop="headline"><?php the_title(); ?>
+              <meta itemprop="name" content="<?php the_title(); ?>">
+            </h1>
+            <h2><?php the_excerpt(); ?></h2>
+          </div>
+          <div class="author-container">
+            <div class="author-image">
+              <img src="" alt="">
+            </div>
+            <div class="name-time">
+              <h3><?php the_author(); ?></h3>
+              <time datetime="" class="has-text-grey-light">
+                <?php if(get_the_modified_date() === get_the_date()) : ?>
                 <span itemprop="datePublished">
-                  <i class="far fa-clock"></i>
                   <?= get_the_date('Y/m/d'); ?></span>
                 <br class="blog-date">
                 <meta itemprop="dateModified" content="<?php the_modified_time('Y/m/d'); ?>">
                 <span>
-                  <?php if ($u_modified_time >= $u_time + 86400) :
-                    echo "<i class='far fa-clock'></i>最終更新日： ";
-                    the_modified_time('Y/m/d');
-                  endif; ?></span>
-              </p>
+                  <?php 
+                    the_modified_time('Y/m/d'); 
+                  endif; ?>
+                </span>
+              </time>
             </div>
-
             <div class="blog-tags-container">
               <?php
               $posttags = get_the_tags(get_the_ID());
@@ -57,8 +64,9 @@
                 echo $providersName[get_the_category()[0]->slug] ?? 'ネットショップ全般'; ?></a> -->
             </div>
           </div>
-        <!-- header title container tag + title + date + tags -->
-        <div class="main-all">
+        </div>
+
+          <div class="main-all">
           <!-- blog content -->
           <div class="blog-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
             <div class="blog-entry-content" itemprop="articleBody">
