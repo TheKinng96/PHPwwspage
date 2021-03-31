@@ -1,5 +1,10 @@
 <div class="post">
-  <h4 class="category"><?php the_category(' '); ?></h4>
+  <h4 class="category">
+    <?php
+    $category = get_the_category();
+    echo $category[0]->cat_name;
+    ?>
+  </h4>
   <div class="post-main-content">
     <h3 class="post-title">
       <?php the_title(); ?>
