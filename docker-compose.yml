@@ -41,6 +41,8 @@ services:
       WORDPRESS_DEBUG: 1
     volumes:
       - ./wws:/var/www/html/wp-content/themes/wws
+      - ../../uploads:/var/www/html/wp-content/uploads
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     container_name: wordpress_wws
 volumes:
   db_data: {}
