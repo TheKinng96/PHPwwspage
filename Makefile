@@ -5,5 +5,8 @@ wp:
 ssh:
 	@docker exec -it wordpress_wws bash;
 
+serve:
+	@npm run watch
+
 stop: 
 	@docker-compose down;

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css": "node-sass --include-path scss assets/css/source.scss assets/css/source.css",
-    "uglify-css": "uglifycss assets/css/source.css > assets/css/source.min.css",
+    "css": "node-sass --include-path scss wws/assets/css/source.scss wws/assets/css/source.css",
+    "uglify-css": "uglifycss wws/assets/css/source.css > wws/assets/css/source.min.css",
     "watch": "nodemon -e scss -x 'npm run css && npm run uglify-css'"
   },
   "author": "",

@@ -708,7 +708,8 @@ footer.footer {
 nav.posts {
   position: unset;
   width: 100vw;
-  margin-top: 0; }
+  margin-top: 0;
+  padding: 0.25rem; }
 
 @media screen and (min-width: 992px) {
   nav.posts a.navbar-brand.posts img {

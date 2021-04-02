@@ -3,6 +3,7 @@
 function wws_enqueue() {
   $uri              = get_theme_file_uri();
   $ver              = DEV_MODE ? time() : false;
+  global $post;
 
   wp_register_style('heebo_google_font', 'https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap', [], $ver);
   wp_register_style('alegreya_google_font', 'https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap', [], $ver);
@@ -28,10 +29,17 @@ function wws_enqueue() {
 
   wp_register_script('bootstrap_js', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js', [], $ver, true);
   wp_register_script('aos_js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', [], $ver, true);
-  wp_register_script('wws_js', $uri . '/assets/js/index.js', [], $ver, true);
+  wp_register_script('posts_js', $uri . '/assets/js/posts.js', [], $ver, true);
+  wp_register_script('home_page_js', $uri . '/assets/js/homePage.js', [], $ver, true);
 
+
+  if (is_home()) {
+    wp_enqueue_script('home_page_js');
+  }
+  if (is_single() && get_post_type($post)) {
+    wp_enqueue_script('posts_js');
+  }
   wp_enqueue_script('bootstrap_js');
   wp_enqueue_script('aos_js');
-  wp_enqueue_script('wws_js');
   wp_enqueue_script('jquery');
 }
