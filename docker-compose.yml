@@ -1,5 +1,5 @@
 version: "3.9"
-    
+
 services:
   db:
     image: mysql:5.7
@@ -14,17 +14,17 @@ services:
     container_name: mysql_wws
 
   phpmyadmin:
-     image: phpmyadmin/phpmyadmin
-     depends_on: 
+    image: phpmyadmin/phpmyadmin
+    depends_on:
       - db
-     restart: always
-     ports:
-       - "8888:80"
-     environment:
-       PMA_HOST: db
-       MYSQL_ROOT_PASSWORD: somewordpress
-     container_name: phpmyadmin_wws
-    
+    restart: always
+    ports:
+      - "8888:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: somewordpress
+    container_name: phpmyadmin_wws
+
   wordpress:
     depends_on:
       - db
@@ -42,6 +42,7 @@ services:
     volumes:
       - ./wws:/var/www/html/wp-content/themes/wws
       - ../../uploads:/var/www/html/wp-content/uploads
+      - ../../plugins:/var/www/html/wp-content/plugins
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     container_name: wordpress_wws
 volumes:

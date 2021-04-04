@@ -8,6 +8,9 @@ Helpers
   --yellow-text: #fdc500;
   --grey-text: #8e8e8e;
 }
+$grey: #a6a6a6;
+$greyText: #8e8e8e;
+$black: #000000;
 
 .is-blue {
   color: var(--blue-text);
@@ -40,10 +43,12 @@ Helpers
 /************************************************
 Common
 *************************************************/
+html,
 body {
   /* font-family: "Heebo", sans-serif; */
   font-family: "Alegreya SC", serif;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .wrapper {

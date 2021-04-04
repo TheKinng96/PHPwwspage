@@ -35,10 +35,10 @@
         </div>
         <div class="name-time">
           <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
-            <h3><?php the_author(); ?></h3>
+            <h3><span>By</span> <?php the_author(); ?></h3>
           </a>
-          <time datetime="<?php the_modified_time('Y/m/d'); ?>" class="has-text-grey-light">
-            <?php the_modified_time('Y/m/d'); ?>
+          <time datetime="<?php the_modified_time('j F Y'); ?>" class="has-text-grey-light">
+            <?php the_modified_time('j F Y'); ?>
             </span>
           </time>
         </div>

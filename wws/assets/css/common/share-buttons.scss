@@ -4,41 +4,31 @@
   width: 60px;
   height: 40px;
   color: white;
-}
+  padding: 0.5em 1em;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  box-shadow: 2px 2px 5px rgba($black, 0.25);
 
-.blog-social-container iframe {
-  width: unset !important;
-  height: unset !important;
-  max-width: 60px;
-  max-height: 40px;
-}
+  &:is(a:hover, button:hover) {
+    color: white !important;
+  }
 
-.blog-social-container :is(a:hover, button:hover) {
-  color: white !important;
-}
+  &.twitter {
+    background: #1da1f2;
+  }
 
-.blog-social-container iframe {
-  display: initial;
-}
+  &.facebook {
+    background: #3b5998;
+  }
 
-.blog-social-container a.twitter {
-  background: #1da1f2;
-}
+  &.rss {
+    background: #fb950a;
+  }
 
-.blog-social-container a.facebook {
-  background: #3b5998;
-}
-
-.blog-social-container button.rss {
-  background: #fb950a;
-}
-
-.blog-social-container button.copy-link {
-  background: #9bdf5b;
-}
-
-a.blog-middle-banner img {
-  margin: 0 auto;
+  &.copy-link {
+    background: #9bdf5b;
+  }
 }
 
 .blog-social-container .column.has-text-right {
